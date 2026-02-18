@@ -13,10 +13,13 @@ function TodoList() {
                     placeholder="New todo"
 
                 />
-                <button className="btn btn-neutral" >Add Task</button>
+                <button type="submit" className="btn btn-neutral">Add Task</button>
+                <button type="button" className="btn btn-error">Log out</button>
             </form>
+            <div className="overflow-y-auto w-[40%] max-h-150 flex flex-col justify-start gap-3">
+                <TodoItem />
 
-            <TodoItem />
+            </div>
         </div>
     )
 }
